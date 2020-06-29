@@ -9,16 +9,30 @@
     <h2> JavaScript-Developer </h2>
     <h3>0. 原生JS开发环境( 等待添加 ): JavaScript-dev-env</h3>
     <h3>1. 原生TypeScript开发环境( 等待添加 ): TypeScript-dev-env</h3>
-    <h3>2. Webpack开发环境( 等待添加 ): Webpack-dev-env</h3>
-        <b>a) JS+React开发: JavaScript-webpack-env</b>
-        <b>b) TS+React开发: TypeScript-webpack-env</b>
+    <h3>2. Webpack开发环境: Webpack-dev-env</h3>
+        <b>a) JS+Webpack+React开发: JavaScript-webpack-base</b>
+            0. 简介: 便于使用Webpack进行JS开发, 支持多页面, 代码压缩等, 区分了开发/生产环境配置
+            1. 主要库: JavaScript+Webpack+Babel+React+Sass+Express
+        <b>b) TS+Webpack+React开发: TypeScript-webpack-base</b>
+            0. 简介: 便于使用Webpack进行TS开发, 支持多页面, 代码压缩等, 区分了开发/生产环境配置
+            1. 主要库: TypeScript+Webpack+Babel+React+Sass+Express
     <h3>3. React开发环境( 等待添加 ): React-dev-env</h3>
         <b>a) Create-react-app开发: Create-react-app-env</b>
-            0. JS开发: JavaScript-react-env
+            1. JS开发: JavaScript-react-env
                 a) Redux开发: React-js-redux-base
+                    0. 简介: React+Redux环境, 可选"PWA配置" 
+                    1. 主要库: 
+                       a) React, React-router-dom, axios, Jest 
+                       b) Redux, Redux-persist, Reselect, Redux-thunk, Redux-Saga
+                       c) Sass, Styled-components
+                    2. 安装:
+                       a) yarn add react-router-dom
+                       b) yarn add redux reselect redux-persist redux-thunk redux-saga
+                       c) yarn add sass --dev
+                       d) yarn add styled-components
                 b) Hooks开发: React-js-hooks-base
                 c) GraphQL开发: React-js-GraphQL-base
-            1. TS开发: TypeScript-react-env
+            2. TS开发: TypeScript-react-env
                 a) Redux开发: React-ts-redux-base
                 b) Hooks开发: React-ts-hooks-base
                 c) GraphQL开发: React-ts-GrapgQL-base
