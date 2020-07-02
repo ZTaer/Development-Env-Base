@@ -31,11 +31,21 @@
                        c) yarn add sass --dev
                        d) yarn add styled-components
                 b) Hooks开发: React-js-hooks-base
-                c) GraphQL开发: React-js-GraphQL-base
+                    0. 简介: React+Hooks+Redux环境, 可选"PWA配置" 
+                    1. 主要库: 
+                       a) React, React-router-dom, axios, Jest 
+                       b) Hooks, Redux, Redux-persist, Reselect, Redux-thunk, Redux-Saga
+                       c) Sass, Styled-components
+                    2. 安装:
+                       a) yarn add react-router-dom
+                       b) yarn add redux reselect redux-persist redux-thunk redux-saga
+                       c) yarn add sass --dev
+                       d) yarn add styled-components
+                c) GraphQL开发( 暂停配置 ): React-js-GraphQL-base
             2. TS开发: TypeScript-react-env
-                a) Redux开发: React-ts-redux-base
+                a) Redux开发: React-ts-redux-base( 等待改进 )
                 b) Hooks开发: React-ts-hooks-base
-                c) GraphQL开发: React-ts-GrapgQL-base
+                c) GraphQL开发( 暂停配置 ): React-ts-GrapgQL-base
         <b>b) NextJs开发: NextJs-env</b>
     <h3>4. 等待添加:</h3>
     <h2> 常用库介绍 </h2>

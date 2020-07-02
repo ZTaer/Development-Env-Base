@@ -1,4 +1,5 @@
 import { peopleActionTypes } from './people.types';
+import { ActionType } from './people.modle';
 
 const INITIAL_STATE = {
     peopleDate: null,
@@ -6,7 +7,8 @@ const INITIAL_STATE = {
     errorMsg: null,
 }
 
-const peopleReducer = ( state = INITIAL_STATE, action ) => {
+
+const peopleReducer = ( state = INITIAL_STATE, action: ActionType ) => {
     switch (action.type) {
         case peopleActionTypes.FETCH_PEOPLE_REDUX_THUNK_START:
             return {
