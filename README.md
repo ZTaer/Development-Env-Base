@@ -7,8 +7,8 @@
 </h3>
 <pre>
     <h2> JavaScript-Developer </h2>
-    <h3>0. 原生JS开发环境( 等待添加 ): JavaScript-dev-env</h3>
-    <h3>1. 原生TypeScript开发环境( 等待添加 ): TypeScript-dev-env</h3>
+    <h3>0. 原生JS开发环境( lite-server ): JavaScript-dev-env</h3>
+    <h3>1. 原生TypeScript开发环境( lite-server ): TypeScript-dev-env</h3>
     <h3>2. Webpack开发环境: Webpack-dev-env</h3>
         <b>a) JS+Webpack+React开发: JavaScript-webpack-base</b>
             0. 简介: 便于使用Webpack进行JS开发, 支持多页面, 代码压缩等, 区分了开发/生产环境配置

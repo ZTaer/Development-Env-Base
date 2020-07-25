@@ -1,0 +1,12 @@
+{
+  "name": "TypeScript-dev-env",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "lite-server",
+    "tsc": "tsc -w"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
