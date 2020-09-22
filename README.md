@@ -2,8 +2,10 @@
     开发环境 - 基础配置 - 用于工作学习
 </h1>
 <h3>
+    更新时间: 2020.9.23<br/>
+    更新内容: 以react redux环境为基础增加material-ui开发环境。<br/>
     更新时间: 2020.6.18<br/>
-    更新内容: 构建基本的开发环境，方便工作或者学习中直接使用。
+    更新内容: 构建基本的开发环境，方便工作或者学习中直接使用。<br/>
 </h3>
 <pre>
     <h2> JavaScript-Developer </h2>
@@ -30,20 +32,28 @@
                        b) yarn add redux reselect redux-persist redux-thunk redux-saga
                        c) yarn add sass --dev
                        d) yarn add styled-components
+                       e) yarn add axios
+                    3. 衍生环境
+                       a) React-js-redux-MaterialUI-base
+                            1. 额外安装:
+                               a) yarn add @material-ui/core
+                               b) yarn add @material-ui/icons
+                               c) yarn add @material-ui/styles
                 b) Hooks开发: React-js-hooks-base
-                    0. 简介: React+Hooks+Redux环境, 可选"PWA配置" 
-                    1. 主要库: 
+                    1. 简介: React+Hooks+Redux环境, 可选"PWA配置" 
+                    2. 主要库: 
                        a) React, React-router-dom, axios, Jest 
                        b) Hooks, Redux, Redux-persist, Reselect, Redux-thunk, Redux-Saga
                        c) Sass, Styled-components
-                    2. 安装:
+                    3. 安装:
                        a) yarn add react-router-dom
                        b) yarn add redux reselect redux-persist redux-thunk redux-saga
                        c) yarn add sass --dev
                        d) yarn add styled-components
+                       e) yarn add axios
                 c) GraphQL开发( 暂停配置 ): React-js-GraphQL-base
-            2. TS开发: TypeScript-react-env
-                a) Redux开发: React-ts-redux-base( 等待改进 )
+            2. TS开发: TypeScript-react-env( 暂停使用 )
+                a) Redux开发: React-ts-redux-base
                 b) Hooks开发: React-ts-hooks-base
                 c) GraphQL开发( 暂停配置 ): React-ts-GrapgQL-base
         <b>b) NextJs开发: NextJs-env</b>
