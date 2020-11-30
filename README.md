@@ -53,7 +53,7 @@
                        e) yarn add axios
                 c) GraphQL开发( 暂停配置 ): React-js-GraphQL-base
             2. TS开发: TypeScript-react-env( 暂停使用 )
-                a) Redux开发: React-ts-redux-base
+                a) Redux开发: React-ts-redux-base ( 暂停使用 )
                 b) Hooks开发: React-ts-hooks-base
                 c) GraphQL开发( 暂停配置 ): React-ts-GrapgQL-base
         <b>b) NextJs开发: NextJs-env</b>

@@ -9,8 +9,8 @@ interface IState {
 }
 
 class ErrorBoundary extends React.Component<IProps , IState> {
-    constructor(){
-        super(),
+    constructor(props: any){
+        super(props)
         this.state = {
             errorState: false,
         }
