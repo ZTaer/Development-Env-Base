@@ -15,8 +15,8 @@ module.exports = {
     },
     mode: 'development',
     devServer: {
-      contentBase: path.resolve( __dirname, '/dist' ),  // 设定根目录
-      index: 'index.html', // 主页
+      contentBase: path.resolve( __dirname, '/dist' ),      // 设定根目录
+      index: 'index.html',          // 主页
       port: 8080, // 访问页面端口
       watchContentBase: true, // 监听目录下的文件是否变化以此刷新页面( 有时并不起作用 )
     },

@@ -1,72 +1,45 @@
 <h1>
     开发环境 - 基础配置 - 用于工作学习
 </h1>
-<h3>
-    更新时间: 2020.9.23<br/>
-    更新内容: 以react redux环境为基础增加material-ui开发环境。<br/>
-    更新时间: 2020.6.18<br/>
-    更新内容: 构建基本的开发环境，方便工作或者学习中直接使用。<br/>
-</h3>
+
 <pre>
-    <h2> JavaScript-Developer </h2>
-    <h3>0. 原生JS开发环境( lite-server ): JavaScript-dev-env</h3>
-    <h3>1. 原生TypeScript开发环境( lite-server ): TypeScript-dev-env</h3>
-    <h3>2. Webpack开发环境: Webpack-dev-env</h3>
-        <b>a) JS+Webpack+React开发: JavaScript-webpack-base</b>
-            0. 简介: 便于使用Webpack进行JS开发, 支持多页面, 代码压缩等, 区分了开发/生产环境配置
-            1. 主要库: JavaScript+Webpack+Babel+React+Sass+Express
-        <b>b) TS+Webpack+React开发: TypeScript-webpack-base</b>
-            0. 简介: 便于使用Webpack进行TS开发, 支持多页面, 代码压缩等, 区分了开发/生产环境配置
-            1. 主要库: TypeScript+Webpack+Babel+React+Sass+Express
-    <h3>3. React开发环境( 等待添加 ): React-dev-env</h3>
-        <b>a) Create-react-app开发: Create-react-app-env</b>
-            1. JS开发: JavaScript-react-env
-                a) Redux开发: React-js-redux-base
-                    0. 简介: React+Redux环境, 可选"PWA配置" 
-                    1. 主要库: 
-                       a) React, React-router-dom, axios, Jest 
-                       b) Redux, Redux-persist, Reselect, Redux-thunk, Redux-Saga
-                       c) Sass, Styled-components
-                    2. 安装:
-                       a) yarn add react-router-dom
-                       b) yarn add redux reselect redux-persist redux-thunk redux-saga
-                       c) yarn add sass --dev
-                       d) yarn add styled-components
-                       e) yarn add axios
-                    3. 衍生环境
-                       a) React-js-redux-MaterialUI-base
-                            1. 额外安装:
-                               a) yarn add @material-ui/core
-                               b) yarn add @material-ui/icons
-                               c) yarn add @material-ui/styles
-                b) Hooks开发: React-js-hooks-base
-                    1. 简介: React+Hooks+Redux环境, 可选"PWA配置" 
-                    2. 主要库: 
-                       a) React, React-router-dom, axios, Jest 
-                       b) Hooks, Redux, Redux-persist, Reselect, Redux-thunk, Redux-Saga
-                       c) Sass, Styled-components
-                    3. 安装:
-                       a) yarn add react-router-dom
-                       b) yarn add redux reselect redux-persist redux-thunk redux-saga
-                       c) yarn add sass --dev
-                       d) yarn add styled-components
-                       e) yarn add axios
-                c) GraphQL开发( 暂停配置 ): React-js-GraphQL-base
-            2. TS开发: TypeScript-react-env( 暂停使用 )
-                a) Redux开发: React-ts-redux-base ( 暂停使用 )
-                b) Hooks开发: React-ts-hooks-base
-                c) GraphQL开发( 暂停配置 ): React-ts-GrapgQL-base
-        <b>b) NextJs开发: NextJs-env</b>
-    <h3>4. 等待添加:</h3>
-    <h2> 常用库介绍 </h2>
-    <h3>0. 等待添加</h3>
+    <h2> JAVASCRIPT_DEV </h2>
+    # HTML5: 原生开发环境
+        0. js-dev.html5
+        1. ts-dev.html5
+    # React: 开发环境
+        0. 推荐使用: ts-dev.react.create-react-app.webpack.redux.material-ui
+        1. js-dev.react.create-react-app.redux
+        2. js-dev.react.create-react-app.redux.material-ui
+        3. js-dev.react.create-react-app.webpack.redux.material-ui ( 等待完善... )
+        4. ts-dev.react.create-react-app.webpack.redux.material-ui ( 等待完善... )
+        5. js-dev.react.create-react-app.hooks
+    # Webpack: 开发环境
+        0. js-dev.webpack
+        1. ts-dev.webpack
+    # Npm: 第三方库
+        0. React: 初始化
+            a) yarn add react-router-dom
+            b) yarn add axios
+        1. Redux: 中间件
+            a) yarn add redux reselect redux-persist redux-thunk redux-saga
+        2. Css: 样式类
+            a) yarn add sass --dev
+            b) yarn add styled-components
+        3. UI: ui类
+            a) yarn add @material-ui/core @material-ui/icons @material-ui/styles
+        4. Other: 其他类
+    # Other: 辅助
+        0. npm run eject: 抽离create-react-app命令方便webpack自定义 
 </pre>
 
-<br/>
-<hr/>
-<br/>
-
 <pre>
-    <h2> Python-Developer </h2>
-    1. 等待添加:
+    <h2> NODE_JS_DEV </h2>
+    # Express: 原生开发环境
+        0. js-dev.node-js.express
+    # Npm: 第三方库
+        0. 
+    # Other: 辅助
+        0. 
+    # ( 等待补充... )
 </pre>
