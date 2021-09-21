@@ -20,7 +20,7 @@
     	d) 注意: yarn ,npm 都会遵守npmrc
     	e) 淘宝源查看: https://npm.taobao.org/mirrors
     3. .vscode - 目的: 设置保持vscode配置相关
-    	a) setting.json: 目的 - 配置vscode常用规则相关
+    	a) settings.json: 目的 - 配置vscode常用规则相关
     	b) extensions.json: 目的 - 推荐安装的vscode插件
     		0. 扩展搜索: "@recommended" 即可查看工作区推荐安装插件
     4. eslint - 目的: 规范js语言
@@ -263,6 +263,10 @@
                         ]
                     },
                 }
+    4. .vscode文件相关配置: 保证vscode在不同的机器上都使用相同的配置
+        a) extensions.json: 目的 - 推荐安装vscode插件
+        b) launch.json: 目的 - vscode和chrome使用F5调试debug代码
+        c) settings.json: 目的 -  保证vscode在不同的机器上都使用相同的设置
             
             
 
