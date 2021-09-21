@@ -240,6 +240,29 @@
                         }
                     ]
                 }
+        d) Git提交校验: husky + lint-staged
+            0. 注意: husky必须安装4.3.8版本, 新版本有严重的功能缺失问题
+                a) 安装: yarn remove husky | yarn add husky@4.3.8 lint-staged -D
+            1. 配置package.json
+                {
+                    "scripts": {
+                        "lint": "eslint src/**/*.ts src/**/*.tsx *.js --ignore-path .gitignore --fix",
+                        "prettier": "prettier --write --loglevel silent src/**/*.{css,scss,json,md}",
+                    },
+                    "husky": {
+                        "hooks": {
+                            "pre-commit": "lint-staged"
+                        }
+                    },
+                    "lint-staged": {
+                        "src/**/*.{js,jsx,ts,tsx}": [
+                            "npm run lint"
+                        ],
+                        "src/**/*.{css,scss,json,md}": [
+                            "npm run prettier"
+                        ]
+                    },
+                }
             
             
 

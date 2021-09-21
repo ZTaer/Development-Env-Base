@@ -1,0 +1,421 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes alertShow {
+  from {
+    right: -350px;
+  }
+
+  to {
+    right: 1rem;
+  }
+}
+
+body,
+ol,
+ul {
+  background-color: #282c34;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+p,
+a,
+h2,
+code,
+span {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji !important;
+  line-height: 1.75;
+}
+
+section {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji !important;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+}
+
+.blue {
+  color: #61dafb;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.fork {
+  position: fixed;
+  padding: 0.5rem 1rem;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 0 0 20px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.fork img {
+  width: 24px;
+}
+
+.fork span {
+  color: #1a1d22;
+  display: none;
+}
+
+.fork:hover {
+  text-decoration: none !important;
+}
+
+.alert {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 999;
+  animation: alertShow 500ms linear;
+  max-width: 230px;
+}
+
+.alert p {
+  margin: 0;
+  padding: 0;
+  color: #1a1d22;
+}
+
+.alert--success {
+  border-left: 10px solid #61dafb;
+}
+
+.alert--error {
+  border-left: 10px solid #f05454;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.react-logo {
+  animation: rotate 10s infinite linear;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+.icon-group {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-group img {
+  width: 36px;
+}
+
+.icon-group img:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stat__item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.installation {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 2rem auto;
+  position: relative;
+}
+
+.installation .menu-bar {
+  display: flex;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}
+
+.installation .menu-bar__item {
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+.installation .menu-bar__item.menu-bar__item--active {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.installation .menu-bar__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.installation .input-project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.installation .input-project .checkbox input {
+  margin-right: 0.5rem;
+}
+
+.installation .input-project label span {
+  color: white;
+}
+
+.installation .input-project .input-project-name {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: #1a1d22;
+}
+
+.installation code {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif !important;
+}
+
+.installation button {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.installation .toggle-input {
+  color: #61dafb;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.installation .toggle-input--active {
+  font-weight: bold;
+}
+
+.installation span {
+  color: #1a1d22;
+}
+
+.clipboard-icon {
+  width: 16px;
+  margin-right: 0.5rem;
+}
+
+.contribute {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.ecosystem h2,
+.contribute h2,
+.contribute p,
+.scripts h2 {
+  text-align: center;
+}
+
+.ecosystem ol li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.ecosystem ol li {
+  text-align: center;
+}
+
+.code-block {
+  display: flex;
+  align-items: center;
+}
+
+.code-block code {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0;
+  padding: 0.5rem 1rem;
+  background-color: #1a1d22;
+  border-radius: 5px;
+  transition: 500ms background-color;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif !important;
+}
+
+.installation .code-block,
+.installation .code-group {
+  width: 100%;
+}
+
+.installation .code-group .code-block {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.installation .code-group .code-block p {
+  margin: 0 0 0.5rem 0;
+}
+
+.installation .code-block code {
+  font-size: 16px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.code-block code:hover {
+  background-color: #66686b;
+  transition: 500ms background-color;
+}
+
+.scripts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.script__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.script__item span {
+  margin: 0 0.5rem;
+}
+
+.script__item p {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.script__item .code-block {
+  justify-content: center;
+}
+
+@media screen and (min-width: 500px) {
+  .installation {
+    max-width: none;
+    margin: 0;
+    align-items: center;
+  }
+
+  .installation .input-project .input-project-name {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .fork img {
+    margin-right: 0.5rem;
+  }
+
+  .fork span {
+    display: block;
+    font-size: 14px;
+  }
+
+  .installation {
+    max-width: 810px;
+  }
+
+  .installation .toggle-input {
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+  }
+
+  .contribute {
+    margin: 0;
+  }
+
+  .ecosystem ol {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ecosystem ol li:not(:last-child) {
+    margin: 0 1rem 0 0;
+  }
+
+  .scripts__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 810px;
+  }
+
+  .script__item {
+    width: 47%;
+  }
+
+  .script__item p {
+    text-align: left;
+  }
+
+  .script__item .code-block {
+    justify-content: left;
+  }
+}
