@@ -67,7 +67,7 @@
 	},
 	"lint-staged": {
 		"src/**/*.{ts,tsx}": [
-			"yarn lint"
+			"eslint --ext .tsx --ext .ts ./src --fix"
 		],
 		"./src/**": [
 			"prettier --write ."
