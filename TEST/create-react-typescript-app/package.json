@@ -66,12 +66,11 @@
 		}
 	},
 	"lint-staged": {
-		"src/**/*.{ts,tsx,js}": [
-			"yarn lint",
-			"eslint -c .eslintrc.js"
+		"src/**/*.{ts,tsx}": [
+			"eslint --ext .tsx --ext .ts ./src --fix"
 		],
-		"src/**/*.{ts,tsx,js,json,html,yml,css,less,scss,md}": [
-			"prettier --write"
+		"./src/**": [
+			"prettier --write ."
 		]
 	}
 }
