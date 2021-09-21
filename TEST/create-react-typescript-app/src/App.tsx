@@ -179,8 +179,6 @@ const App = (): ReactElement => {
 		};
 	}, [isAlertShow]);
 
-	const [state, setstate] = useState('');
-
 	const AutoInstallCommandComponent = () => (
 		<section className="code-group">
 			<section className="code-block">
