@@ -15,6 +15,21 @@
 		"react-scripts": "4.0.2",
 		"web-vitals": "^1.0.1"
 	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,ts,tsx}": [
+			"npm run eslint-fix",
+			"git add"
+		],
+		"src/**/*.{css,scss,json,md}": [
+			"npm run prettier-write",
+			"git add"
+		]
+	},
 	"scripts": {
 		"start": "react-app-rewired start",
 		"build": "react-app-rewired build",
@@ -59,18 +74,5 @@
 		"react-app-rewired": "^2.1.8",
 		"tsconfig-paths": "^3.9.0",
 		"typescript": "^4.1.5"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"src/**/*.{ts,tsx}": [
-			"eslint --ext .tsx --ext .ts ./src --fix"
-		],
-		"./src/**": [
-			"prettier --write ."
-		]
 	}
 }
