@@ -68,7 +68,7 @@ const config = {
 		'@typescript-eslint/indent': 'off',
 		'@typescript-eslint/no-unused-vars': ['warn'],
 		'@typescript-eslint/explicit-module-boundary-types': ['off'],
-		'react/react-in-jsx-scope': 'off',
+		'react/react-in-jsx-scope': ['off'],
 		'react/jsx-filename-extension': [
 			1,
 			{ extensions: ['.js', '.jsx', '.ts', '.tsx'] },

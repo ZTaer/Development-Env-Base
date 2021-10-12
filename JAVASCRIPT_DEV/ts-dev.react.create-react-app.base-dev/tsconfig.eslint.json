@@ -9,8 +9,5 @@
 		"src/**/*.ts",
 		"test/**/*.tsx",
 		"test/**/*.ts"
-	],
-	"compilerOptions": {
-		"react/react-in-jsx-scope": "off"
-	}
+	]
 }
