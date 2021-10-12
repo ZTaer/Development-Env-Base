@@ -49,7 +49,7 @@ const config = {
 		],
 		semi: 'off',
 		'@typescript-eslint/semi': 'off',
-		'arrow-body-style': ['error', 'as-needed'],
+		'arrow-body-style': ['off', 'as-needed'],
 		'@typescript-eslint/comma-dangle': [
 			'error',
 			{
@@ -66,7 +66,15 @@ const config = {
 		'import/no-unresolved': 'off',
 		indent: 'off',
 		'@typescript-eslint/indent': 'off',
-		'@typescript-eslint/no-unused-vars': ['error'],
+		'@typescript-eslint/no-unused-vars': ['warn'],
+		'@typescript-eslint/explicit-module-boundary-types': ['off'],
+		'react/react-in-jsx-scope': 'off',
+		'react/jsx-filename-extension': [
+			1,
+			{ extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+		],
+		'react/jsx-props-no-spreading': ['off'],
+		'import/prefer-default-export': ['off'],
 	},
 };
 
