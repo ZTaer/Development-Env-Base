@@ -9,11 +9,11 @@ const aliasMap = configPaths('./tsconfig.base.json');
  */
 
 module.exports = function override(config, env) {
-	// ### 基本配置
+	// ### 基本配置 ###
 	const webpackConfig = alias(aliasMap)(config, env);
 	webpackConfig.output.publicPath = process.env.PUBLIC_URL;
 
-	// ### 统一文件生成名称
+	// ### 统一文件生成名称 ###
 	// js 文件
 	webpackConfig.output.filename = 'static/js/index.js';
 	// css 文件
@@ -31,7 +31,7 @@ module.exports = function override(config, env) {
 		}
 	});
 
-	// ### 禁用一些不必要的配置
+	// ### 禁用一些不必要的配置 ###
 	// 关闭文件chunk
 	webpackConfig.optimization = {
 		...webpackConfig.optimization,
@@ -41,7 +41,7 @@ module.exports = function override(config, env) {
 	// 禁止生成版权相关文件
 	webpackConfig.optimization.minimizer[0].options.extractComments = false;
 
-	// ### 兼容处理
+	// ### 兼容处理 ###
 	// 解决多个第三方库,引起的React版本冲突问题( 等待笔记 - 常见 - 可选配置 )
 	//		a) 核心思路:
 	//			0. webpack剔除react, react-dom的打包

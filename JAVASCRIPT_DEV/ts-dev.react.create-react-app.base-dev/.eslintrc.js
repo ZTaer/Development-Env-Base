@@ -81,7 +81,7 @@ const config = {
 		'@typescript-eslint/ban-ts-comment': ['off'], // 是否允许使用注释 @ts-ignore
 		'@typescript-eslint/no-shadow': ['warn'], // 是否允许已有变量时, 不同之间变量作用域重命名 ( 重要 )
 		'no-param-reassign': ['off'], // 是否允许在props修改
-		'no-else-return': ['off'], //保证 if else正常使用
+		'no-else-return': ['off'], // 保证 if else正常使用
 		'no-restricted-globals': ['off'], // 是否允许location的使用
 		'jsx-ally/click-events-have-key-events': ['off'], // 保证自由的使用onClick
 		'jsx-ally/no-static-element-interactions': ['off'], // 保证自由的使用onClick
