@@ -55,8 +55,7 @@
 		"test": "react-app-rewired test",
 		"eject": "react-scripts eject",
 		"lint": "eslint src/**/*.ts src/**/*.tsx *.js --ignore-path .gitignore --fix",
-		"prettier": "pretty-quick --staged",
-		"reset": "node reset-app.js"
+		"prettier": "pretty-quick --staged"
 	},
 	"eslintConfig": {
 		"extends": [
