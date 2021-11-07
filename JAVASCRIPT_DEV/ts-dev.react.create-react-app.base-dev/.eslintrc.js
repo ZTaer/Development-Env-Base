@@ -75,6 +75,19 @@ const config = {
 		],
 		'react/jsx-props-no-spreading': ['off'],
 		'import/prefer-default-export': ['off'],
+		'react/prop-types': ['off'], // 强制react type 注释props数据类型, 其实有ts就够用了
+		'react/jsx-fragments': ['off'], // 是否允许使用React.Fragments
+		'react/destructuring-assignment': ['off'], // 必须解构的方式引用数据
+		'@typescript-eslint/ban-ts-comment': ['off'], // 是否允许使用注释 @ts-ignore
+		'@typescript-eslint/no-shadow': ['warn'], // 是否允许已有变量时, 不同之间变量作用域重命名 ( 重要 )
+		'no-param-reassign': ['off'], // 是否允许在props修改
+		'no-else-return': ['off'], //保证 if else正常使用
+		'no-restricted-globals': ['off'], // 是否允许location的使用
+		'jsx-ally/click-events-have-key-events': ['off'], // 保证自由的使用onClick
+		'jsx-ally/no-static-element-interactions': ['off'], // 保证自由的使用onClick
+		'no-plusplus': ['warn'], // 是否允许使用++运算符
+		'consistent-return': ['warn'], // 箭头函数必须有return
+		'array-callback-return': ['warn'], // 回调写法警告
 	},
 };
 
