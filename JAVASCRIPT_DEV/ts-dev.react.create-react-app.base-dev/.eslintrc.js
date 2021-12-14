@@ -88,6 +88,8 @@ const config = {
 		'no-plusplus': ['warn'], // 是否允许使用++运算符
 		'consistent-return': ['warn'], // 箭头函数必须有return
 		'array-callback-return': ['warn'], // 回调写法警告
+		'prefer-destructuring': ['off'], // 关闭要求必须解构
+		'@typescript-eslint/no-explicit-any': ['off'], // 允许使用ts的any
 	},
 };
 
