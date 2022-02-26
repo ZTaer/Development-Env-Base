@@ -35,7 +35,7 @@ const config = {
 		sourceType: 'module',
 		project: ['./tsconfig.eslint.json'],
 	},
-	plugins: ['react', '@typescript-eslint', 'prettier'],
+	plugins: ['react', '@typescript-eslint', 'jsx-a11y', 'import', 'prettier'],
 	rules: {
 		'no-console': NODE_ENV === 'development' ? 'off' : 'error',
 		'import/newline-after-import': 'error',
