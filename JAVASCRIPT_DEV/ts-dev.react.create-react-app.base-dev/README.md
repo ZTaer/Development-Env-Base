@@ -1,6 +1,7 @@
-# Create-react-app 搭建脚手架: 此脚手架适合生产环境编译React页面, 支持webpack定制化配置 ( Create-react-app+Typescript+Scss+Babel+Eslint+Prettier+Husky+LintStaged )
+# Create-react-app 搭建脚手架: 此脚手架适合生产环境编译React页面, 支持webpack定制化配置
 
-# 详细搭建日志参考: ./lod.md
+# 主要依赖: Create-react-app + Typescript + Scss + Babel + Eslint + Prettier + Husky+LintStaged
+# 详细搭建日志参考: ./lod.md ( https://github.com/ZTaer/Development-Env-Base/blob/master/JAVASCRIPT_DEV/ts-dev.react.create-react-app.base-dev/log.md )
 
 <pre>
 # TODO: 2021.09.23 ( 等待笔记 )
