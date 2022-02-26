@@ -1,0 +1,13 @@
+.vscode/
+node_modules/
+node_modules
+dist/
+scripts/
+src/stories
+.DS_STORE
+.idea
+build
+
+commit.config.js
+rollup.config.js
+package-lock.json
