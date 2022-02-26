@@ -1,1 +1,0 @@
-import{__assign as o}from"../../node_modules/tslib/tslib.es6.js";import{jsxs as r,jsx as e}from"react/jsx-runtime";import i from"./hello-word-other.component.js";var l=function(s){s=s.value;return r("div",o({className:"hello-word"},{children:[e("h1",{children:void 0===s?"HelloWord":s},void 0),e(i,{},void 0)]}),void 0)};export{l as default};
