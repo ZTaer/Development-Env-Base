@@ -37,7 +37,7 @@ const config = {
 	},
 	plugins: ['react', '@typescript-eslint', 'jsx-a11y', 'import', 'prettier'],
 	rules: {
-		'no-console': NODE_ENV === 'development' ? 'off' : 'error',
+		'no-console': ['error', { allow: ['warn', 'error'] }],
 		'import/newline-after-import': 'error',
 		quotes: ['error', 'single'],
 		'prettier/prettier': [
