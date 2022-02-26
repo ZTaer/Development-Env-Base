@@ -1,7 +1,5 @@
 require('dotenv').config();
 
-const { NODE_ENV } = process.env;
-
 const config = {
 	root: true,
 	env: {
