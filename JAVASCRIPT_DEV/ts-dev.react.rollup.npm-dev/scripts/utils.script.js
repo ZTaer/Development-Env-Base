@@ -38,7 +38,6 @@ const handleUtilsEmptyDir = (path) => {
 		});
 	} catch {
 		console.warn('handleUtilsEmptyDir error');
-		throw new Error('handleUtilsEmptyDir error');
 	}
 };
 exports.handleUtilsEmptyDir = handleUtilsEmptyDir;
@@ -64,7 +63,6 @@ const handleUtilsRmEmptyDir = (path, level = 0) => {
 		}
 	} catch {
 		console.warn('handleUtilsRmEmptyDir error');
-		throw new Error('handleUtilsRmEmptyDir error');
 	}
 };
 exports.handleUtilsRmEmptyDir = handleUtilsRmEmptyDir;
@@ -79,7 +77,6 @@ const handleUtilsClearDir = (path) => {
 		handleUtilsRmEmptyDir(path);
 	} catch {
 		console.warn('handleUtilsClearDir error');
-		throw new Error('handleUtilsClearDir error');
 	}
 };
 exports.handleUtilsClearDir = handleUtilsClearDir;
