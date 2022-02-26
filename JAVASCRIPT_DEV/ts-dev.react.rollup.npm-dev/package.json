@@ -1,6 +1,6 @@
 {
 	"name": "ztaer-npm-public",
-	"version": "1.0.10",
+	"version": "1.0.14",
 	"description": "npm public react component test",
 	"main": "dist/index.js",
 	"module": "lib/index.js",
@@ -98,7 +98,7 @@
 		"build-storybook": "build-storybook",
 		"build-prod": "yarn clear && node_modules/.bin/rollup -c ./scripts/rollup.config.prod.js && node_modules/.bin/rollup -c ./scripts/rollup.es-config.prod.js",
 		"build-dev": "yarn clear && node_modules/.bin/rollup -c ./scripts/rollup.config.dev.js && node_modules/.bin/rollup -c ./scripts/rollup.es-config.dev.js",
-		"build-publish": "yarn build-prod && npm publish",
+		"build-publish": "yarn build-prod && yarn publish",
 		"clear": "node ./scripts/clear.script.js",
 		"lint": "eslint src/**/*.ts src/**/*.tsx --ignore-path .gitignore --fix --quiet",
 		"prettier": "prettier --write --loglevel silent src/**/*.{css,scss,json,md}"
