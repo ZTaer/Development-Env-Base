@@ -1,33 +1,30 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "outDir": "./dist",
+        "sourceMap": true, // 生成map文件, 使webpack在浏览器中可以调试ts
+        "allowJs": true, // 允许编译javascript文件
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true, // 允许文件没有默认导出( export default xxx )
+        "strict": true,
+        "forceConsistentCasingInFileNames": true, // 禁止对同一文件使用大小写不一致的引用( 机翻 )。
+        "module": "esnext",
+        "moduleResolution": "node", // 指定模块解析策略为node
+        "resolveJsonModule": true, // 解析Json模块
+        "isolatedModules": true, // 将每个文件作为单独的模块进行翻译
+        "noEmit": true, // ts/tsx文件不编译成文件( 交给babel处理 )
+        "jsx": "react" // react必备
+    },
+    "include": [
+        "src",
+        "./typings/images.d.ts" // 使在tsx文件中可以正常的import图片
     ],
-    "outDir": "./dist",  
-    "sourceMap": true,                          // 生成map文件, 使webpack在浏览器中可以调试ts 
-    "allowJs": true,                            // 允许编译javascript文件
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,       // 允许文件没有默认导出( export default xxx )
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,   // 禁止对同一文件使用大小写不一致的引用( 机翻 )。
-    "module": "esnext",
-    "moduleResolution": "node",                 // 指定模块解析策略为node
-    "resolveJsonModule": true,                  // 解析Json模块
-    "isolatedModules": true,                    // 将每个文件作为单独的模块进行翻译
-    "noEmit": true,                             // ts/tsx文件不编译成文件( 交给babel处理 )
-    "jsx": "react"                              // react必备
-  },
-  "include": [
-    "src",
-    "./typings/images.d.ts"                     // 使在tsx文件中可以正常的import图片( 等待笔记 )
-  ],
-  "exclude": [                                /* 排除编译目标 */
-    "node_modules",                           // 默认必须有
-    "*.dev.ts",                               // 不编译当前目录下的"*.dev.ts"
-    "**/*.dev.ts"                             // 不编译文件目录内的"*.dev.ts"
-  ]
+    "exclude": [
+        /* 排除编译目标 */
+        "node_modules", // 默认必须有
+        "*.dev.ts", // 不编译当前目录下的"*.dev.ts"
+        "**/*.dev.ts" // 不编译文件目录内的"*.dev.ts"
+    ]
 }

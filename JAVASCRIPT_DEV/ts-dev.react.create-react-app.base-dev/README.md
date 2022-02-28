@@ -4,7 +4,7 @@
 # 详细搭建日志参考: ./lod.md ( https://github.com/ZTaer/Development-Env-Base/blob/master/JAVASCRIPT_DEV/ts-dev.react.create-react-app.base-dev/log.md )
 
 <pre>
-# TODO: 2021.09.23 ( 等待笔记 )
+# TODO: 2021.09.23 ( 完成笔记 )
     a) Create-react-app 项目格式化配置 - 实验四 ( 实验成功 )
         0. 此脚手架配置:
             a) Create-react-app: 目的 - 官方单页面应用程序脚手架, 社区资源丰富, 我没想到的配置他能想到

@@ -4,7 +4,7 @@ const { aliasJest, configPaths, alias } = require('react-app-rewire-alias');
 const aliasMap = configPaths('./tsconfig.base.json');
 
 /**
- * 自定义create-react-app webpack配置( 等待笔记 )
+ * 自定义create-react-app webpack配置( 完成笔记 )
  * 		a) 注意: 以下配置, 除基本配置外, 其他皆可根据实际情况修改调整
  */
 
@@ -42,7 +42,7 @@ module.exports = function override(config, env) {
 	webpackConfig.optimization.minimizer[0].options.extractComments = false;
 
 	// ### 兼容处理 ###
-	// 解决多个第三方库,引起的React版本冲突问题( 等待笔记 - 常见 - 可选配置 )
+	// 解决多个第三方库,引起的React版本冲突问题( 完成笔记 - 常见 - 可选配置 )
 	//		a) 核心思路:
 	//			0. webpack剔除react, react-dom的打包
 	//			1. 在html下引用react, react-dom, 的CDN资源

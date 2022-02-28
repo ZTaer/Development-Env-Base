@@ -5,7 +5,7 @@
 # 详细搭建日志参考: ./lod.md ( https://github.com/ZTaer/ztaer-npm-public/blob/main/log.md )
 
 <pre>
-# TODO: 2022.02.26 ( 等待笔记 - 推荐阅读 )
+# TODO: 2022.02.26 ( 完成笔记 - 推荐阅读 )
     a) Rollup搭建Npm发布脚手架总结
         0. 此脚手架配置:
             a) Rollup: 目的 - 简化配置,代替webpack
