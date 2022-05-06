@@ -620,6 +620,7 @@
             <p>
                 NODE_ENV=development
                 PUBLIC_URL=/
+				GENERATE_SOURCEMAP=false # 是否生成map文件
             </p>
         10. .eslintrc.js: ( 新建文件 )
             <p>
