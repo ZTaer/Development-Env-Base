@@ -88,6 +88,12 @@ const config = {
 		'array-callback-return': ['warn'], // 回调写法警告
 		'prefer-destructuring': ['off'], // 关闭要求必须解构
 		'@typescript-eslint/no-explicit-any': ['off'], // 允许使用ts的any
+		'react/display-name': ['off'],
+		'jsx-a11y/click-events-have-key-events': ['off'],
+		'jsx-a11y/no-static-element-interactions': ['off'],
+		'@typescript-eslint/no-shadow': ['warn'],
+		'react/no-array-index-key': ['off'],
+		'no-unneeded-ternary': ['off'],
 	},
 };
 

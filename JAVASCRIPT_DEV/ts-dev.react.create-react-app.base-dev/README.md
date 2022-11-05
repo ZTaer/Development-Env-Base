@@ -1,4 +1,24 @@
-# Create-react-app 搭建脚手架: 此脚手架适合生产环境编译React页面, 支持webpack定制化配置
+##### 如果不能正常安装请尝试此方式( 注意: 尽量使用管理员权限执行命令 ):
+
+# 权限问题安装方式:
+
+<pre>
+    0. yarn --unsafe-perm
+
+    1. 如果还是报错，这时候你需要删除node_module和 .lock文件，重新安装
+</pre>
+
+# 极端环境安装方式:
+
+<pre>
+    0. npm i -g yarn ( 安装yarn )
+
+    1. yarn config set "strict-ssl" false -g ( 放宽yarn安装源的限制 )
+
+    2. yarn install --registry https://registry.npm.taobao.org/  ( 临时修改安装源 --> 永久: https://baijiahao.baidu.com/s?id=1716928054770882295&wfr=spider&for=pc )
+</pre>
+
+##### Create-react-app 搭建脚手架: 此脚手架适合生产环境编译React页面, 支持webpack定制化配置
 
 # 主要依赖: Create-react-app + Typescript + Scss + Babel + Eslint + Prettier + Husky+LintStaged
 # 详细搭建日志参考: ./lod.md ( https://github.com/ZTaer/Development-Env-Base/blob/master/JAVASCRIPT_DEV/ts-dev.react.create-react-app.base-dev/log.md )
