@@ -16,6 +16,10 @@
     1. yarn config set "strict-ssl" false -g ( 放宽yarn安装源的限制 )
 
     2. yarn install --registry https://registry.npm.taobao.org/  ( 临时修改安装源 --> 永久: https://baijiahao.baidu.com/s?id=1716928054770882295&wfr=spider&for=pc )
+
+	3. 如果依然发生报错删除 yarn.lock & yarn.error & node_modules 文件
+
+	4. 重复上述步骤
 </pre>
 
 ##### Create-react-app 搭建脚手架: 此脚手架适合生产环境编译React页面, 支持webpack定制化配置
