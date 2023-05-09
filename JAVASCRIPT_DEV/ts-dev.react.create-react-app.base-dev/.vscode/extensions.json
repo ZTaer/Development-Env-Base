@@ -32,7 +32,12 @@
 		"ms-vscode.vscode-typescript-tslint-plugin",
 		"vscodevim.vim",
 		"jpoissonnier.vscode-styled-components",
-		"tabnine.tabnine-vscode"
+		"tabnine.tabnine-vscode",
+		"alexandernanberg.horizon-theme-vscode",
+		"yang-yue.switch-hosts",
+		"vscode-icons-team.vscode-icons",
+		"cweijan.xmind-viewer",
+		"Vue.volar"
 	],
 	"unwantedRecommendations": [
 		"hookyqr.beautify",
